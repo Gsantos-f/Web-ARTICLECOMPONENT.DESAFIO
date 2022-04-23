@@ -1,0 +1,47 @@
+main{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: hsl(210, 46%, 95%);
+    height: 100vh;
+    width: 100vw;
+}
+.caixa-principal{
+    display: flex;
+    justify-content: center;
+    width: 550px;
+}
+.imagem-principal img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    object-position: left;
+}
+.caixa-conteudo{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    font-size: 12px;
+}
+.caixa-conteudo h2{
+    margin: 10px 30px;
+}
+.caixa-conteudo p{
+    margin: 2px 30px;
+}
+.caixa-perfil{
+    margin: 0 30px;
+    margin-top: 10px;
+    display: flex;
+}
+.caixa-perfil .michelle{
+    border-radius: 50%;
+    height: 40px;
+}
+.caixa-perfil .share{
+    background-color:  hsl(210, 46%, 95%);
+    border-radius: 50%;
+    height: 18px;
+    padding: 8px;
+}
