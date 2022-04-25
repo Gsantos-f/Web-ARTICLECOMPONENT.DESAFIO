@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;400;700&display=swap');
+*{
+    font-family: 'Overpass';
+}
 main{
     justify-content: center;
     align-items: center;
@@ -12,36 +16,94 @@ main{
     width: 550px;
 }
 .imagem-principal img{
+    border-radius: 8px 0px 0 8px;
     height: 200px;
     width: 200px;
     object-fit: cover;
     object-position: left;
 }
 .caixa-conteudo{
+    border-radius: 0 8px 8px 0;
     height: 200px;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
-    font-size: 12px;
+    font-size: 11px;
 }
 .caixa-conteudo h2{
+    color:  hsl(217, 19%, 35%);
     margin: 10px 30px;
+    margin-top: 20px;
 }
 .caixa-conteudo p{
+    color:  hsl(214, 17%, 51%);
     margin: 2px 30px;
 }
 .caixa-perfil{
     margin: 0 30px;
     margin-top: 10px;
     display: flex;
+    justify-content: space-between;
+}
+.caixa-perfil-avatar-e-info{
+    display: flex;
+    align-items: center;
+}
+.caixa-perfil-avatar-e-info .caixa-nome-data{
+    margin-left: 15px;
+}
+.caixa-perfil-avatar-e-info .caixa-nome-data h3{    
+    font-size: 10px;
+    color:  hsl(214, 17%, 51%);
+}
+.caixa-perfil-avatar-e-info .caixa-nome-data h4{ 
+    font-size: 10px;   
+    color:  hsl(212, 23%, 69%);
 }
 .caixa-perfil .michelle{
+    font-weight: 800;
     border-radius: 50%;
-    height: 40px;
+    height: 30px;
 }
-.caixa-perfil .share{
+.caixa-perfil .caixa-share .share{
+    cursor: pointer;
     background-color:  hsl(210, 46%, 95%);
     border-radius: 50%;
-    height: 18px;
+    height: 12px;
     padding: 8px;
+    transition: .3s;
+}
+.caixa-share .share-redes-sociais{
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    display: flex;
+    background-color: hsl(217, 19%, 35%);
+    border-radius: 8px;
+    top: 46vh;
+    height: 40px;
+    padding: 0 25px;
+    padding-top: 3px;
+}
+.share-redes-sociais::before{
+    content: "";
+    width: 20px;
+    height: 14px;
+    top: 43px;
+    background-color: hsl(217, 19%, 35%);
+    position: absolute;
+
+}
+.share-redes-sociais .redes-sociais{
+    margin-left: 15px;
+    align-items: center;
+}
+.share-redes-sociais h4{
+    color:  hsl(212, 23%, 69%);
+    font-weight: 400;
+}
+.share-redes-sociais .redes-sociais img{
+    border-radius: 1px;
+    margin-left: 5px ;
+    height: 15px;
 }
