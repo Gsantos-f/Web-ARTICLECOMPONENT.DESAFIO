@@ -71,13 +71,21 @@ main{
     border-radius: 50%;
     height: 12px;
     padding: 8px;
-    transition: .3s;
+    transition: 0s;
+}
+.caixa-perfil .caixa-share .share:active, .caixa-perfil .caixa-share .share:hover{
+    filter:brightness(300%);
+    background-color:  hsl(218, 20%, 21%);
+}
+.caixa-perfil .caixa-share .share:active{
+    background-color:  hsl(217, 22%, 12%);
 }
 .caixa-share .share-redes-sociais{
+    display: none;
+    left: 60.7vw;
     align-items: center;
     justify-content: space-around;
     position: absolute;
-    display: flex;
     background-color: hsl(217, 19%, 35%);
     border-radius: 8px;
     top: 46vh;
@@ -85,13 +93,19 @@ main{
     padding: 0 25px;
     padding-top: 3px;
 }
+.aberto{
+    display: flex;
+}
 .share-redes-sociais::before{
     content: "";
-    width: 20px;
-    height: 14px;
+    width: 0px;
+    height: 0px;
     top: 43px;
-    background-color: hsl(217, 19%, 35%);
+    background-color: hsla(217, 19%, 35%, 0);
     position: absolute;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
 
 }
 .share-redes-sociais .redes-sociais{
