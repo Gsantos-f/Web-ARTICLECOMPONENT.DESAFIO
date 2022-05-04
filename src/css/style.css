@@ -93,8 +93,8 @@ main{
     padding: 0 25px;
     padding-top: 3px;
 }
-.aberto{
-    display: flex;
+.caixa-share .aberto{
+    display: flex; 
 }
 .share-redes-sociais::before{
     content: "";
